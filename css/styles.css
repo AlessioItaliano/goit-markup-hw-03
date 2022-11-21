@@ -1,0 +1,251 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --primery-black-color: #000000;
+  --address-second-color: rgba(255, 255, 255, 0.6);
+  --primery-bg-color: #2f303a;
+  --button-primery-bg-color: #2196f3;
+  --button-secondary-bg-color: #f5f4fa;
+  --button-bg-active-color: #188ce8;
+  --special-bg-color: #f5f4fa;
+  --portfolio-bg-color: #eeeeee;
+}
+
+body {
+  background-color: var(--primery-white-color);
+  color: var(--primery-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Шапка сайту*/
+
+.logo {
+  color: var(--primery-black-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.first-color-logo {
+  color: var(--accent-color);
+}
+
+/* Сайт навігація */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Контактна інформація */
+
+.contact-info .link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact-info .link:hover,
+.contact-info .link:focus {
+  color: var(--accent-color);
+}
+
+/* Банер */
+
+.banner {
+  background-color: var(--primery-bg-color);
+}
+
+.banner-title {
+  color: var(--primery-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Кнопка */
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primery {
+  color: var(--primery-white-color);
+  background-color: var(--button-primery-bg-color);
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button.primery:hover,
+.button.primery:focus {
+  color: var(--primery-white-color);
+  background-color: var(--button-bg-active-color);
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primery-white-color);
+  background-color: var(--button-primery-bg-color);
+}
+
+/* Інформація по секціям загальна */
+
+.title,
+.features-item,
+.team-people,
+.portfolio-sample {
+  color: var(--title-text-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* .portfolio.title
+.features.title */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Секція особливості */
+
+.features-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Наша команда */
+
+.our-team {
+  background-color: var(--special-bg-color);
+}
+
+.team-item {
+  background-color: var(--primery-white-color);
+}
+
+.team-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-job {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Портфоліо */
+
+.portfolio-item {
+  background-color: var(--portfolio-bg-color);
+  text-decoration: none;
+}
+
+/* .portfolio-item:hover
+.portfolio-item:focus {
+
+} */
+
+.portfolio-sample {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-type {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Підвал */
+
+.footer {
+  background-color: var(--primery-bg-color);
+}
+
+.second-color-logo,
+.address-link {
+  color: var(--primery-white-color);
+}
+
+.footer .link {
+  color: var(--address-second-color);
+}
+
+.address-link:hover,
+.address-link:focus,
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+
+.footer .address-link,
+.footer .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
