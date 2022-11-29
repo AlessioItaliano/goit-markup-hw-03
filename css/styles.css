@@ -25,7 +25,6 @@ ul {
   padding: 0;
 }
 
-
 /* Шапка сайту*/
 
 .logo {
@@ -82,6 +81,7 @@ ul {
 .banner {
   background-color: var(--primery-bg-color);
   text-align: center;
+  padding-top: 200px;
   margin-bottom: 94px;
 }
 
@@ -90,13 +90,12 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* width: 696px; */
   margin-top: 0;
   margin-bottom: 30px;
+  min-width: 696px;
 }
 
 /* Кнопка */
@@ -149,6 +148,8 @@ ul {
 
 .container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -214,8 +215,6 @@ ul {
 
 .work {
   margin-bottom: 94px;
-
-  background-color: #188ce8;
 }
 
 .work-title {
@@ -225,15 +224,12 @@ ul {
 /* Наша команда */
 
 .our-team {
- background-color: green;
-  /* background-color: var(--special-bg-color); */
-
+  padding-top: 94px;
+  background-color: var(--special-bg-color);
 }
 
 .team-title {
-  background-color: yellow;
-margin-top: 94px;
-
+  margin-bottom: 50px;
 }
 
 .team-item {
@@ -245,15 +241,30 @@ margin-top: 94px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team-job {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Портфоліо */
+
+.portfolio {
+  margin-bottom: 94px;
+}
+
+.filter {
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
 
 .portfolio-item {
   background-color: var(--portfolio-bg-color);
@@ -265,12 +276,18 @@ margin-top: 94px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .portfolio-type {
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.88;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Підвал */
