@@ -7,7 +7,6 @@
   --address-second-color: rgba(255, 255, 255, 0.6);
   --primery-bg-color: #2f303a;
   --button-primery-bg-color: #2196f3;
-  --button-secondary-bg-color: #f5f4fa;
   --button-bg-active-color: #188ce8;
   --special-bg-color: #f5f4fa;
   --portfolio-bg-color: #eeeeee;
@@ -20,9 +19,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list {
+ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* Шапка сайту*/
 
@@ -79,6 +81,8 @@ body {
 
 .banner {
   background-color: var(--primery-bg-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .banner-title {
@@ -89,6 +93,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  /* width: 696px; */
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* Кнопка */
@@ -98,6 +106,9 @@ body {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+
+  border-radius: 4px;
+  border: transparent;
 }
 
 .button.primery {
@@ -106,6 +117,10 @@ body {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+  min-width: 216px;
+  margin-bottom: 164px;
 }
 
 .button.primery:hover,
@@ -115,10 +130,13 @@ body {
 }
 .button.secondary {
   color: var(--title-text-color);
-  background-color: var(--button-secondary-bg-color);
+  background-color: var(--special-bg-color);
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  min-width: 73px;
+  padding: 6px 22px;
 }
 
 .button.secondary:hover,
@@ -129,22 +147,32 @@ body {
 
 /* Інформація по секціям загальна */
 
-.title,
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.features-title,
+.work-title,
+.team-title,
+.portfolio-title,
 .features-item,
 .team-people,
 .portfolio-sample {
   color: var(--title-text-color);
 }
 
-.title {
+.features-title,
+.work-title,
+.team-title,
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-/* .portfolio.title
-.features.title */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -160,22 +188,52 @@ body {
 
 /* Секція особливості */
 
+.features {
+  margin-bottom: 94px;
+}
+
 .features-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features-text {
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Чим ми замаємось */
+
+.work {
+  margin-bottom: 94px;
+
+  background-color: #188ce8;
+}
+
+.work-title {
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
 
 .our-team {
-  background-color: var(--special-bg-color);
+ background-color: green;
+  /* background-color: var(--special-bg-color); */
+
+}
+
+.team-title {
+  background-color: yellow;
+margin-top: 94px;
+
 }
 
 .team-item {
@@ -202,11 +260,6 @@ body {
   text-decoration: none;
 }
 
-/* .portfolio-item:hover
-.portfolio-item:focus {
-
-} */
-
 .portfolio-sample {
   font-weight: 700;
   font-size: 18px;
@@ -231,19 +284,19 @@ body {
   color: var(--primery-white-color);
 }
 
-.footer .link {
+.footer-link {
   color: var(--address-second-color);
 }
 
 .address-link:hover,
 .address-link:focus,
-.footer .link:hover,
-.footer .link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
 
-.footer .address-link,
-.footer .link {
+.address-link,
+.footer-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
