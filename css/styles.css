@@ -10,6 +10,7 @@
   --button-bg-active-color: #188ce8;
   --special-bg-color: #f5f4fa;
   --portfolio-bg-color: #eeeeee;
+  --border-header-color: #ececec;
 }
 
 body {
@@ -27,6 +28,9 @@ ul {
 
 /* Шапка сайту*/
 
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 .logo {
   color: var(--primery-black-color);
   font-family: 'Raleway', sans-serif;
@@ -40,29 +44,61 @@ ul {
   color: var(--accent-color);
 }
 
+.main-header {
+  display: flex;
+}
+
 /* Сайт навігація */
 
-.site-nav .link {
+.site-nav,
+.contact-info {
+  display: flex;
+}
+
+/* .contact-item:not(:last-child)*/
+.nav-item:not(:last-child){ 
+margin-right: 50px;
+}
+
+.contact-item+ .contact-item {
+margin-left: 50px;
+}
+
+.nav-link,
+.contact-link {
+  display:block;
+  padding-top: 32px;
+  padding-bottom: 32px; 
+  
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  background-color: aqua;
+
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.contact-link {
+  color: var(--primery-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus, 
+.contact-link:hover,
+.contact-link:focus{
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
 
 /* Контактна інформація */
 
-.contact-info .link {
+.contact-link {
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -71,10 +107,6 @@ ul {
   text-decoration: none;
 }
 
-.contact-info .link:hover,
-.contact-info .link:focus {
-  color: var(--accent-color);
-}
 
 /* Банер */
 
@@ -86,40 +118,41 @@ ul {
 }
 
 .banner-title {
+  margin: 0 0 30px;
+  width: 696px; 
+
   color: var(--primery-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  margin-top: 0;
-  margin-bottom: 30px;
-  min-width: 696px;
 }
 
 /* Кнопка */
 
-.button {
+.button { 
+ border-radius: 4px;
+  border: transparent;
+
   font-family: inherit;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
 
-  border-radius: 4px;
-  border: transparent;
 }
 
 .button.primery {
+  padding: 10px 32px;
+  min-width: 216px;
+  margin-bottom: 164px;  
+
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  padding: 10px 32px;
-  min-width: 216px;
-  margin-bottom: 164px;
 }
 
 .button.primery:hover,
@@ -128,14 +161,15 @@ ul {
   background-color: var(--button-bg-active-color);
 }
 .button.secondary {
+  min-width: 73px;
+  padding: 6px 22px;  
+
   color: var(--title-text-color);
   background-color: var(--special-bg-color);
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  min-width: 73px;
-  padding: 6px 22px;
 }
 
 .button.secondary:hover,
@@ -194,21 +228,22 @@ ul {
 }
 
 .features-item {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .features-text {
-  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0; 
+ font-size: 14px;
   line-height: 1.71;
 
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* Чим ми замаємось */
@@ -225,6 +260,7 @@ ul {
 
 .our-team {
   padding-top: 94px;
+
   background-color: var(--special-bg-color);
 }
 
@@ -237,22 +273,22 @@ ul {
 }
 
 .team-people {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .team-job {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* Портфоліо */
@@ -272,22 +308,24 @@ ul {
 }
 
 .portfolio-sample {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
 
 .portfolio-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.88;
 
-  margin-top: 0;
-  margin-bottom: 0;
+
 }
 
 /* Підвал */
