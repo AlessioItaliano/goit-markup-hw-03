@@ -160,8 +160,6 @@ ul {
 .banner {
   background-color: var(--primery-bg-color);
   text-align: center;
-  /* padding-top: 200px; */
-  margin-bottom: 94px;
 }
 
 .banner-title {
@@ -224,10 +222,6 @@ ul {
 
 /* Секція особливості */
 
-.features {
-  margin-bottom: 94px;
-}
-
 .features-list {
   display: flex;
 }
@@ -260,10 +254,6 @@ margin-right: 30px;
 
 /* Чим ми замаємось */
 
-.work {
-  margin-bottom: 94px;
-}
-
 .work-title {
 margin-top: 0;
   margin-bottom: 50px;
@@ -286,8 +276,6 @@ margin-right: 30px;
 /* Наша команда */
 
 .our-team {
-  padding-top: 94px;
-
   background-color: var(--special-bg-color);
 }
 
@@ -324,14 +312,9 @@ display: flex;
 
 /* Портфоліо */
 
-.portfolio {
-  margin-bottom: 94px;
-}
-
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 34px;
 }
 
@@ -381,9 +364,17 @@ flex-wrap: wrap;
 /* Підвал */
 
 .footer {
+  display: flex;
+  
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--primery-bg-color);
 }
 
+.footer-logo {
+  margin-bottom: 20px;
+}
 .second-color-logo,
 .address-link {
   color: var(--primery-white-color);
