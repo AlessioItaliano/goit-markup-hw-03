@@ -26,6 +26,49 @@ ul {
   padding: 0;
 }
 
+/* Інформація по секціям загальна */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.features-title,
+.work-title,
+.team-title,
+.portfolio-title,
+.features-item,
+.team-people,
+.portfolio-sample {
+  color: var(--title-text-color);
+}
+
+.features-title,
+.work-title,
+.team-title,
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Шапка сайту*/
 
 .header {
@@ -46,6 +89,11 @@ ul {
 
 .main-header {
   display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
 }
 
 /* Сайт навігація */
@@ -77,12 +125,6 @@ margin-left: 50px;
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  background-color: aqua;
-
-}
-
-.contact-link {
-  color: var(--primery-text-color);
 }
 
 .nav-link:hover,
@@ -96,8 +138,6 @@ margin-left: 50px;
   color: var(--accent-color);
 }
 
-/* Контактна інформація */
-
 .contact-link {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -107,6 +147,9 @@ margin-left: 50px;
   text-decoration: none;
 }
 
+.contact-info {
+  margin-left: auto;
+}
 
 /* Банер */
 
@@ -178,48 +221,6 @@ margin-left: 50px;
   background-color: var(--button-primery-bg-color);
 }
 
-/* Інформація по секціям загальна */
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.features-title,
-.work-title,
-.team-title,
-.portfolio-title,
-.features-item,
-.team-people,
-.portfolio-sample {
-  color: var(--title-text-color);
-}
-
-.features-title,
-.work-title,
-.team-title,
-.portfolio-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 
 /* Секція особливості */
 
