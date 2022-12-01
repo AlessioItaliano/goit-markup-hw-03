@@ -26,6 +26,11 @@ ul {
   padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* Інформація по секціям загальна */
 
 .container {
@@ -108,7 +113,6 @@ ul {
   display: flex;
 }
 
-/* .contact-item:not(:last-child)*/
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -189,7 +193,6 @@ ul {
 .button.primery {
   padding: 10px 32px;
   min-width: 216px;
-  /* margin-bottom: 164px;   */
 
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
@@ -203,6 +206,7 @@ ul {
   color: var(--primery-white-color);
   background-color: var(--button-bg-active-color);
 }
+
 .button.secondary {
   min-width: 73px;
   padding: 6px 22px;
@@ -227,7 +231,7 @@ ul {
 }
 
 .features-item {
-width: 270;
+width: 270px;
 margin-right: 30px;
 }
 
@@ -264,12 +268,12 @@ margin-top: 0;
 }
 
 .work-item {
-  width: 370;
+  width: 370px;
 margin-right: 30px;
 }
 
 .work-item:nth-child(3n) {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 
@@ -280,6 +284,7 @@ margin-right: 30px;
 }
 
 .team-title {
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -288,7 +293,23 @@ display: flex;
 }
 
 .team-item {
+  margin-right: 30px;
+
   background-color: var(--primery-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child {
+  margin-right: 0;
+} 
+
+.team-foto {
+width: 270px;
+}
+
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-people {
@@ -327,6 +348,7 @@ flex-wrap: wrap;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid var(--portfolio-bg-color)
 }
 
 .portfolio-parts:nth-child(3n) {
@@ -334,7 +356,7 @@ flex-wrap: wrap;
 }
 
 .portfolio-parts:nth-last-child(-n + 3) {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .portfolio-item {
@@ -342,6 +364,9 @@ flex-wrap: wrap;
   text-decoration: none;
 }
 
+.portfolio-name {
+  
+}
 .portfolio-sample {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -364,8 +389,6 @@ flex-wrap: wrap;
 /* Підвал */
 
 .footer {
-  display: flex;
-  
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -373,6 +396,7 @@ flex-wrap: wrap;
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 .second-color-logo,
