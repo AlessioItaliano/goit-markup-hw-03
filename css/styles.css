@@ -164,13 +164,18 @@ p {
 
 /* Банер */
 
-.banner {
+.section-banner{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
   background-color: var(--primery-bg-color);
   text-align: center;
+
 }
 
 .banner-title {
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 
   color: var(--primery-white-color);
   font-weight: 900;
@@ -192,7 +197,7 @@ p {
   cursor: pointer;
 }
 
-.button.primery {
+.primery {
   padding: 10px 32px;
   min-width: 216px;
 
@@ -203,13 +208,13 @@ p {
   letter-spacing: 0.06em;
 }
 
-.button.primery:hover,
-.button.primery:focus {
+.primery:hover,
+.primery:focus {
   color: var(--primery-white-color);
   background-color: var(--button-bg-active-color);
 }
 
-.button.secondary {
+.secondary {
   min-width: 73px;
   padding: 6px 22px;
 
@@ -220,8 +225,8 @@ p {
   letter-spacing: 0.03em;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.secondary:hover,
+.secondary:focus {
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
 }
@@ -258,6 +263,10 @@ p {
 
 /* Чим ми замаємось */
 
+.work {
+  padding-top: 0;
+}
+
 .work-title {
   margin-bottom: 50px;
 }
@@ -267,7 +276,7 @@ p {
 }
 
 .work-item {
-  width: 370px;
+  flex-basis: 370px;
   margin-right: 30px;
 }
 
@@ -301,7 +310,7 @@ p {
 }
 
 .team-foto {
-  width: 270px;
+  flex-basis: 270px;
 }
 
 .team-description {
@@ -331,7 +340,8 @@ p {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+  gap: 8px;
 }
 
 .portfolio-list {
@@ -340,10 +350,10 @@ p {
 }
 
 .portfolio-parts {
-  width: 370px;
+  flex-basis: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--portfolio-bg-color);
+  
 }
 
 .portfolio-parts:nth-child(3n) {
@@ -364,6 +374,10 @@ p {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 20px;
+
+border-right: 1px solid var(--portfolio-bg-color);
+border-bottom: 1px solid var(--portfolio-bg-color);
+border-left: 1px solid var(--portfolio-bg-color);
 }
 
 .portfolio-sample {
@@ -403,6 +417,14 @@ p {
 
 .footer-link {
   color: var(--address-second-color);
+}
+
+.address-item {
+  margin-bottom: 9px;
+}
+
+.address-item:last-child{
+  margin-bottom: 0;
 }
 
 .address-link:hover,
