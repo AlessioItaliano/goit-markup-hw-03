@@ -31,6 +31,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
 /* Інформація по секціям загальна */
 
 .container {
@@ -162,7 +170,7 @@ img {
 }
 
 .banner-title {
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 
   color: var(--primery-white-color);
   font-weight: 900;
@@ -234,7 +242,6 @@ img {
 }
 
 .features-accent {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -244,7 +251,6 @@ img {
 }
 
 .features-text {
-  margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
@@ -253,7 +259,6 @@ img {
 /* Чим ми замаємось */
 
 .work-title {
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -277,7 +282,6 @@ img {
 }
 
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -306,7 +310,6 @@ img {
 }
 
 .team-people {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -316,7 +319,6 @@ img {
 }
 
 .team-job {
-  margin-top: 0;
   margin-bottom: 0;
 
   font-size: 16px;
@@ -358,10 +360,10 @@ img {
 }
 
 .portfolio-name {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .portfolio-sample {
@@ -374,7 +376,6 @@ img {
 }
 
 .portfolio-type {
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--primery-text-color);
